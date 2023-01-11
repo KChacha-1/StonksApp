@@ -1,0 +1,14 @@
+.stories{
+    display: flex;
+    color: #fff;
+
+}
+.card{
+    display: block;
+    border-bottom: #fff 1px solid;
+    padding: 10px;
+}
+.card h1,h2,p{
+    text-align: left;
+
+}

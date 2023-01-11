@@ -1,0 +1,12 @@
+.searchBar{
+    margin-left: 5%;
+}
+.searchBar form {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+  }
+  .searchBar input {
+    margin-left: 10%;
+    
+  }

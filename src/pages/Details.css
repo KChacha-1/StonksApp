@@ -1,0 +1,16 @@
+.stocktitle{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.stocktitle h1{
+    margin-top: 10px;
+}
+.details{
+    display: block;
+}
+.graph{
+    display: flex;
+    max-width: 550;
+    
+}
