@@ -1,5 +1,5 @@
 # Stonks App
-Powered by [https://polygon.io/] free-tier API's with basic stock data.
+Powered by [Polygon.io](https://polygon.io) free-tier API's with basic stock data.
 
 
 ![image](https://user-images.githubusercontent.com/47930630/211926668-c78ba288-1d27-42dc-9b1d-59e8b952c89c.png)
