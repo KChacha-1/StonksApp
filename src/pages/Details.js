@@ -19,7 +19,7 @@ export default function Details() {
   return (
     <div className="details">
       {error && <>{error}</>}
-      {isPending && <>loading...</>}
+      {isPending && <>loading...</>}        
       {data && stockdetails && (
         <>
               <div className="stocktitle">
@@ -29,77 +29,77 @@ export default function Details() {
               </div>
         <Plot className="graph"
           data={[
-              {
-                  x: data.results.map((time) => new Date(time.t).toLocaleDateString("en-US")),
-                  
-                  y: data.results.map((value) => value.vw),
-                  
-                  type: "scatter",
-                  
-                  mode: "lines",
-                  
-                  marker: { color: "white" },
-                },
-            ]}
-            layout={{
-                font: {
-                    family: "Courier New, monospace",
-                    size: 18,
-                    color: "#ffffff",
-                },
-                width: 350,
-                height: 500,
-                margin: {
-                  l: 0,
-                  r: 0,
-                  b: 20,
-                  t: 20,
-                  pad: 5
-                }, 
-                title: "",
-                paper_bgcolor: "rgba(0,0,0,0)",
-                plot_bgcolor: "rgba(0,0,0,0)",
-                xaxis: {
-                    showgrid: false,
-                    zeroline: false,
-                    visible: false,
-                    fixedrange: true,
-                    type: Date,
-                    rangeselector:{
-                    visible : true,
-                    rangeslider:true,
-                    buttons : [{
-                        step: 'month',
-                        stepmode: 'backward',
-                        count: 1,
-                        label: '1m'
-                    }, {
-                      step: 'month',
-                      stepmode: 'backward',
-                      count: 3,
-                      label: '3m'
-                  }, {
-                        step: 'month',
-                        stepmode: 'backward',
-                        count: 6,
-                        label: '6m'
-                    },{
-                        step: 'year',
-                        visible : true
-                      }
-                        
-                    ]
-                    },
-                },
-                yaxis: {
-                    showgrid: false,
-                    zeroline: false,
-                    visible: false,
-                    showline:true,
-                    fixedrange:true,
-                },
+            {
+              x: data.results.map((time) => new Date(time.t).toLocaleDateString("en-US")),
+              
+              y: data.results.map((value) => value.vw),
+              
+              type: "scatter",
+              
+              mode: "lines",
+              
+              marker: { color: "white" },
+            },
+          ]}
+          layout={{
+            font: {
+              family: "Courier New, monospace",
+              size: 18,
+              color: "#ffffff",
+            },
+            width: 350,
+            height: 500,
+            margin: {
+              l: 0,
+              r: 0,
+              b: 20,
+              t: 20,
+              pad: 5
+            }, 
+            title: "",
+            paper_bgcolor: "rgba(0,0,0,0)",
+            plot_bgcolor: "rgba(0,0,0,0)",
+            xaxis: {
+              showgrid: false,
+              zeroline: false,
+              visible: false,
+              fixedrange: true,
+              type: Date,
+              rangeselector:{
+                visible : true,
+                rangeslider:true,
+                buttons : [{
+                  step: 'month',
+                  stepmode: 'backward',
+                  count: 1,
+                  label: '1m'
+                }, {
+                  step: 'month',
+                  stepmode: 'backward',
+                  count: 3,
+                  label: '3m'
+                }, {
+                  step: 'month',
+                  stepmode: 'backward',
+                  count: 6,
+                  label: '6m'
+                },{
+                  step: 'year',
+                  visible : true
+                }
                 
-            }}
+              ]
+            },
+          },
+          yaxis: {
+            showgrid: false,
+            zeroline: false,
+            visible: false,
+            showline:true,
+            fixedrange:true,
+          },
+          
+        }}
             config={{ displayModeBar: false, scrollZoom: false }}
             />
       </>

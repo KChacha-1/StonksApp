@@ -10,7 +10,29 @@
     display: block;
     margin: 0;
     padding: 0;
+
 }
+@media (min-width: 600px) {
+    .details{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .stocktitle{
+        display: block;
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    .stocktitle h1{
+        margin-top: 10px;
+    }
+    .graph{
+       display: flex;
+    
+    }
+  }
+
 .graph{
     margin: 0;
     padding: 0;
