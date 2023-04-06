@@ -10,8 +10,8 @@ export default function Navbar() {
             <Link to="/">
             <h1 className="siteName">StonksApp</h1>
             </Link>
-            <SearchBar/>
         </nav>
+            <SearchBar className="Search-bar"/>
     </div>
   )
 }

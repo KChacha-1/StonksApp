@@ -8,9 +8,12 @@
 }
 .details{
     display: block;
+    margin: 0;
+    padding: 0;
 }
 .graph{
-    display: flex;
-    max-width: 550;
+    margin: 0;
+    padding: 0;
+
     
 }

@@ -9,17 +9,25 @@ export default function SearchBar() {
         e.preventDefault()
         search(`/search?q=${term}`)
     }
+    const [showSearchBar, setShowSearchBar] = useState(false);
+
+  const toggleSearchBar = () => {
+    setShowSearchBar(!showSearchBar);
+  }
   return (
     <div className='searchBar'>
+        <button className={`search-icon ${showSearchBar ? 'hidden' : ''}`} onClick={toggleSearchBar}>Search</button>
+      {showSearchBar && (
         <form onSubmit={handleSubmit}>
             <input 
-            placeholder="Search"
+            placeholder="Ticker"
             type="text"
             id="search"
             onChange={(e)=>setTerm(e.target.value)}
             />
             <button type="submit">Search</button>
         </form>
+        )}
     </div>
   )
 }

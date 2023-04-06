@@ -47,8 +47,15 @@ export default function Details() {
                     size: 18,
                     color: "#ffffff",
                 },
-                width: 500,
+                width: 350,
                 height: 500,
+                margin: {
+                  l: 0,
+                  r: 0,
+                  b: 20,
+                  t: 20,
+                  pad: 5
+                }, 
                 title: "",
                 paper_bgcolor: "rgba(0,0,0,0)",
                 plot_bgcolor: "rgba(0,0,0,0)",

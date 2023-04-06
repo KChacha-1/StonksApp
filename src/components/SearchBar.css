@@ -1,12 +1,21 @@
 .searchBar{
-    margin-left: 5%;
+  display: inline-block;
+  align-items: center;
 }
 .searchBar form {
     display: flex;
-    align-items: center;
-    padding-left: 5%;
-  }
-  .searchBar input {
-    margin-left: 10%;
-    
-  }
+}
+.searchBar input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;    
+}
+.search-icon{
+  background:none;
+  color: wheat;
+  border: none;
+}
+.hidden {
+  display: none;
+}
