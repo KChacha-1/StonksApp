@@ -1,4 +1,5 @@
 # Stonks App
+- https://stonks-app.vercel.app/
 Powered by [Polygon.io](https://polygon.io) free-tier API's with basic stock data.
 
 
